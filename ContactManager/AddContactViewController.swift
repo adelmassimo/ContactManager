@@ -21,12 +21,10 @@ class AddContactViewController: NSViewController {
     @IBOutlet var tag1: NSButton!
     @IBOutlet var tag2: NSButton!
     var tags = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-//        contactBook.contacts.append( Contact() )
-//        ContactBook.saveContactBook(contactBook: contactBook)
-//        backView.contactsTable?.reloadData()
     }
     
     @IBAction func myfunc(sender: AnyObject) {
@@ -38,7 +36,7 @@ class AddContactViewController: NSViewController {
             notes: (notesLabel?.stringValue)!,
             tags: tags)
         contactBook.add(contact: newContact )
-        contactBook.sortByName(by: backView.lastSort)
+        contactBook.sortCB(by: backView.lastSort)
         contactBook.saveCB()
         backView.contactsTable?.reloadData()
         self.dismissViewController(self)

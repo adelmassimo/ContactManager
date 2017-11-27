@@ -13,11 +13,8 @@ class ContactBook: NSObject {
     var tagsToFilter = [String]()
     var contacts = [Contact]()
     
-    override init() {
-    }
-//    func add(name: String, lastName: String, phone: String, email: String, notes: String?){
-//        contacts.append(Contact(name: name, lastname: lastName, phone: phone, email: email, notes: notes!))
-//    }
+    override init() {}
+    
     func add(contact: Contact){
         contacts.append(contact)
     }
@@ -27,18 +24,8 @@ class ContactBook: NSObject {
     func loadCB(){
         contacts = loadContacts()!
     }
-    func sortByName(by: String){
-        //Lambdacalculus to sort
-//        if (by.range(of:"reverse") != nil) {
-//            contacts.sort { (contact1, contact2) -> Bool in
-//                return contact1.name as! String > contact2.name as! String
-//            }
-//        }else{
-//            contacts.sort { (contact1, contact2) -> Bool in
-//                return contact2.value(forKey: by) as! String > contact1.value(forKey: by) as! String
-//            }
-//        }
-        
+    func sortCB(by: String){
+
         switch by {
         case "email-sort":
             contacts.sort { (contact1, contact2) -> Bool in
@@ -107,16 +94,8 @@ class ContactBook: NSObject {
             return contactsShowable
         }
         return contactsFilteredBySearch
-//        if tagsToFilter != [] {
-//            let set1:Set<String> = Set(tagsToFilter)
-//            for i in 0..<contactsFiltered().count{
-//                let set2:Set<String> = Set(contactsToShow()[i].tags)
-//                if set1.intersection(set2) == [] {
-//                    //contactsShowable.remove(at: i)
-//                    print(set1.intersection(set2).description)
-//                }
-//            }
     }
+    
     //MARK: NSCoding
     private func saveContacts(contactBook: ContactBook) {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(contactBook.contacts, toFile: Contact.ArchiveURL.path)
