@@ -24,6 +24,8 @@ The principal purpose was to define alle the elements needed to represent the co
 Some refiniments, like windows transparency was reached following [this tutorial](https://developer.apple.com/documentation/appkit/nsvisualeffectview)
 
 ### little thing and known bugs:
+* The sorting is implemented using a lambda function that defines the rules for compare two elements.
 * On the right is shown the selected contact, and it's editable: a good treatment for this area could be lock before select a row, otherwise allow to edit a "smoke" field.
+* Tag visualization on the right is not well implemented. Only show the descriptor of tags array in the Contact class.
 
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)
