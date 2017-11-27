@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F57CD8061FC591C400F54166 /* RemoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CD8051FC591C400F54166 /* RemoveViewController.swift */; };
 		F5A633651FC488B1009C23DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633641FC488B1009C23DB /* AppDelegate.swift */; };
 		F5A633671FC488B1009C23DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633661FC488B1009C23DB /* ViewController.swift */; };
 		F5A633691FC488B1009C23DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A633681FC488B1009C23DB /* Assets.xcassets */; };
 		F5A6336C1FC488B1009C23DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A6336A1FC488B1009C23DB /* Main.storyboard */; };
 		F5A633781FC488B1009C23DB /* ContactManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633771FC488B1009C23DB /* ContactManagerTests.swift */; };
 		F5A633831FC488B1009C23DB /* ContactManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633821FC488B1009C23DB /* ContactManagerUITests.swift */; };
+		F5A633921FC4A95C009C23DB /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633901FC4A95C009C23DB /* AddContactViewController.swift */; };
+		F5A633951FC4AA5E009C23DB /* ContactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633941FC4AA5D009C23DB /* ContactBook.swift */; };
+		F5A633971FC4AFDE009C23DB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A633961FC4AFDE009C23DB /* Contact.swift */; };
+		F5D902ED1FC89805001D2C25 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D902EC1FC89805001D2C25 /* Helper.swift */; };
+		F5D902EF1FC8B38F001D2C25 /* black-man-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D902EE1FC8B38F001D2C25 /* black-man-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F57CD8051FC591C400F54166 /* RemoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveViewController.swift; sourceTree = "<group>"; };
 		F5A633611FC488B1009C23DB /* ContactManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A633641FC488B1009C23DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A633661FC488B1009C23DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,11 @@
 		F5A6337E1FC488B1009C23DB /* ContactManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A633821FC488B1009C23DB /* ContactManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManagerUITests.swift; sourceTree = "<group>"; };
 		F5A633841FC488B1009C23DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A633901FC4A95C009C23DB /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		F5A633941FC4AA5D009C23DB /* ContactBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBook.swift; sourceTree = "<group>"; };
+		F5A633961FC4AFDE009C23DB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F5D902EC1FC89805001D2C25 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F5D902EE1FC8B38F001D2C25 /* black-man-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-man-icon.png"; path = "../../../Downloads/black-man-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +110,15 @@
 			children = (
 				F5A633641FC488B1009C23DB /* AppDelegate.swift */,
 				F5A633661FC488B1009C23DB /* ViewController.swift */,
+				F57CD8051FC591C400F54166 /* RemoveViewController.swift */,
+				F5A633901FC4A95C009C23DB /* AddContactViewController.swift */,
+				F5A633941FC4AA5D009C23DB /* ContactBook.swift */,
+				F5D902EC1FC89805001D2C25 /* Helper.swift */,
+				F5A633961FC4AFDE009C23DB /* Contact.swift */,
 				F5A633681FC488B1009C23DB /* Assets.xcassets */,
 				F5A6336A1FC488B1009C23DB /* Main.storyboard */,
 				F5A6336D1FC488B1009C23DB /* Info.plist */,
+				F5D902EE1FC8B38F001D2C25 /* black-man-icon.png */,
 				F5A6336E1FC488B1009C23DB /* ContactManager.entitlements */,
 			);
 			path = ContactManager;
@@ -231,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D902EF1FC8B38F001D2C25 /* black-man-icon.png in Resources */,
 				F5A633691FC488B1009C23DB /* Assets.xcassets in Resources */,
 				F5A6336C1FC488B1009C23DB /* Main.storyboard in Resources */,
 			);
@@ -257,8 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A633921FC4A95C009C23DB /* AddContactViewController.swift in Sources */,
+				F5D902ED1FC89805001D2C25 /* Helper.swift in Sources */,
 				F5A633671FC488B1009C23DB /* ViewController.swift in Sources */,
+				F5A633971FC4AFDE009C23DB /* Contact.swift in Sources */,
 				F5A633651FC488B1009C23DB /* AppDelegate.swift in Sources */,
+				F57CD8061FC591C400F54166 /* RemoveViewController.swift in Sources */,
+				F5A633951FC4AA5E009C23DB /* ContactBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
