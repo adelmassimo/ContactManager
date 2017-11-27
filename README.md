@@ -16,6 +16,6 @@ The language used is Swift 4, so it's required Xcode (≥9.x) to compile and run
 ![Xcode Design bulder](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/storyboard.png)
 
 ### Step1: improve Persistence
-The first step was create Contact and ContactsBook classes and improve persistence of a single contacts, this using the UsersDefault strategy, clearly explained in [link this Apple tutorial](https://developer.apple.com/documentation/foundation/userdefaults)
+The first step was create Contact and ContactsBook classes and improve persistence of a single contacts, this using the UsersDefault strategy, clearly explained in [this Apple tutorial](https://developer.apple.com/documentation/foundation/userdefaults)
 
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)
