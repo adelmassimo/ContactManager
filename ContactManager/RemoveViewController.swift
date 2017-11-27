@@ -38,6 +38,7 @@ class RemoveViewController: NSViewController {
         contactBook.contacts.remove(at: contactToDelete.helperIndex!)
         contactBook.saveCB()
         backView.contactsTable?.reloadData()
+        backView.lastRowSelected = -1
         removeButton?.isEnabled = false
         undoButton?.isHidden = false
         
