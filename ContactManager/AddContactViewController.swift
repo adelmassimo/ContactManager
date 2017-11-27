@@ -10,11 +10,12 @@ import Cocoa
 
 class AddContactViewController: NSViewController {
     
-    @IBOutlet var addButton:NSButton?
     @IBOutlet var nameLabel:NSTextField?
     @IBOutlet var lastNameLabel:NSTextField?
     @IBOutlet var phoneLabel:NSTextField?
     @IBOutlet var emailLabel:NSTextField?
+    @IBOutlet var notesLabel:NSTextField?
+    
     var backView: ViewController!
     var contactBook = ContactBook()
     @IBOutlet var tag1: NSButton!
@@ -34,7 +35,7 @@ class AddContactViewController: NSViewController {
             lastname: (lastNameLabel?.stringValue)!,
             phone: (phoneLabel?.stringValue)!,
             email: (emailLabel?.stringValue)!,
-            notes: " ",
+            notes: (notesLabel?.stringValue)!,
             tags: tags)
         contactBook.add(contact: newContact )
         contactBook.sortByName(by: backView.lastSort)

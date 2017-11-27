@@ -395,7 +395,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="ctK-lJ-i0L"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" id="apr-9e-BBh">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Tags" id="apr-9e-BBh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="knobColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -490,7 +490,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Xe-84-y6l">
                                 <rect key="frame" x="20" y="103" width="410" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="pQX-LZ-Nvh">
+                                <textFieldCell key="cell" selectable="YES" editable="YES" state="on" drawsBackground="YES" id="pQX-LZ-Nvh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -535,6 +535,7 @@
                         <outlet property="emailLabel" destination="Vcb-c6-9bP" id="clw-Dq-kfJ"/>
                         <outlet property="lastNameLabel" destination="ifo-jI-9N1" id="VBM-Fq-7gu"/>
                         <outlet property="nameLabel" destination="dHL-ag-MQK" id="UHo-di-xHS"/>
+                        <outlet property="notesLabel" destination="8Xe-84-y6l" id="bWP-ZF-i2n"/>
                         <outlet property="phoneLabel" destination="Ohf-pw-6FR" id="Xsr-iB-e6h"/>
                         <outlet property="tag1" destination="53H-uh-lMv" id="4Ym-fW-RVp"/>
                         <outlet property="tag2" destination="frX-HN-SHO" id="wbW-hG-3H3"/>

@@ -121,13 +121,15 @@ class ContactBook: NSObject {
     private func saveContacts(contactBook: ContactBook) {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(contactBook.contacts, toFile: Contact.ArchiveURL.path)
         if isSuccessfulSave {
-            os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
+            os_log("Contacts successfully saved.", log: OSLog.default, type: .debug)
         } else {
-            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+            os_log("Failed to save contacts...", log: OSLog.default, type: .error)
         }
     }
     private func loadContacts() -> [Contact]?  {
-        print(Contact.ArchiveURL.path)
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact]
+        guard let contacts = NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact] else{
+            return [Contact]()
+        }
+        return contacts
     }
 }
