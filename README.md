@@ -13,6 +13,9 @@ This CM must implements below properties:
 
 The language used is Swif 4, so it's required Xcode (≥9.x) to compile and run the application. The MVC is implicitly imposed by language: it's possible to draw the view in the .sroryboard file and then link it to a NSViewController class, that can manage all properties of view.
 
+![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/storyboard.png)
+
+
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)
 
 # OMG
