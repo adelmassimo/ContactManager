@@ -21,9 +21,9 @@ The first step was create Contact and ContactsBook classes and improve persisten
 
 ### Step2: Design and link View
 The principal purpose was to define alle the elements needed to represent the contacts (i.e. a TableView and some Buttons). Once defined, these elements are linked to the class ViewController to add behavior.
-Some refiniments, like windows transparency was reached following [this tutorial](https://developer.apple.com/documentation/appkit/nsvisualeffectview)
+Some refiniments, like windows transparency was reached following [these guidelines](https://developer.apple.com/documentation/appkit/nsvisualeffectview)
 
-### Little things and known bugs:
+	### Little things and known bugs:
 * ContactsBook have a state, defined by a seatchFilter, tagFilter and the contacts array: the persistence interests only the contacts array (i.e. on reopen the eventuals filters are losed!)
 * The sorting is implemented using a lambda function that defines the rules for compare two elements.
 * Lots of warnig raised from the layout constrains used in storyboard: i'm not a good designer!
