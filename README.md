@@ -15,7 +15,12 @@ The language used is Swift 4, so it's required Xcode (≥9.x) to compile and run
 
 ![Xcode Design bulder](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/storyboard.png)
 
-### Step1: improve Persistence
-The first step was create Contact and ContactsBook classes and improve persistence of a single contacts, this using the UsersDefault strategy, clearly explained in [this Apple tutorial](https://developer.apple.com/documentation/foundation/userdefaults)
+### Step1: Improve Persistence
+The first step was create Contact and ContactsBook classes and improve persistence of a single contacts, this using the UsersDefault strategy, clearly explained in [this tutorial](https://developer.apple.com/documentation/foundation/userdefaults).
+
+### Step2: Design and link View
+The principal purpose was to define alle the elements needed to represent the contacts (i.e. a TableView and some Buttons). Once definied, these elements are linked to the class ViewController to add behavior.
+Some refiniments, like windows transparency was reached following [link this tutorial](https://developer.apple.com/documentation/appkit/nsvisualeffectview)
+
 
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)
