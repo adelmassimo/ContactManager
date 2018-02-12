@@ -27,7 +27,7 @@ Some refiniments, like windows transparency was reached following [these guideli
 * ```ContactsBook``` have a state, defined by a ```searchFilter```, ```tagFilter``` and the ```contacts``` array: the persistence interests only the contacts array (i.e. on reopen the eventuals filters are losed!)
 * The sorting is implemented using a lambda function that defines the rules for compare two elements.
 * On the right is shown the selected contact, and it's editable: a good treatment for this area could be lock before select a row, otherwise allow to edit a "smoke" field.
-* Tag visualization on the right is not well implemented. Only show the descriptor of tags array in the Contact class, too boring to refine.
-* Isn't possible add a tag by the interface, but it's easly to do by back end.
+* Tag visualization on the right is not well implemented. Only show the descriptor of tags array in the Contact class
+* Isn't possible add a tag by the interface: tag are fixed, but easly manageable by back end.
 
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)
