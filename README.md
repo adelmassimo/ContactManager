@@ -29,6 +29,5 @@ Some refiniments, like windows transparency was reached following [these guideli
 * On the right is shown the selected contact, and it's editable: a good treatment for this area could be lock before select a row, otherwise allow to edit a "smoke" field.
 * The Tag visualization it's raw implemented. Only show the descriptor of tags array in the Contact class.
 * The contact table is navigable using keys, but this not update conract view (trigger for this event it's triky).
-* Saving Notes action is triggered onlu by pressing "TAB" key.
 
 ![First launch](https://raw.githubusercontent.com/adelmassimo/ContactManager/master/redameImg/start.png)

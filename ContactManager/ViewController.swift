@@ -50,6 +50,7 @@ class ViewController: NSViewController {
             let next = segue.destinationController as! RemoveViewController
             next.contactBook = contactBook
             next.backView = self
+            next.contactIndex = (contactsTable?.selectedRow)
             if next.contactToDelete.helperIndex == nil{
                next.contactToDelete.helperIndex = (contactsTable?.selectedRow)
             }else{

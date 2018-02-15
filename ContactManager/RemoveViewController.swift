@@ -20,10 +20,12 @@ class RemoveViewController: NSViewController {
     var backView: ViewController!
     var contactBook = ContactBook()
     var contactToDelete = Contact()
+    var contactIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        contactToDelete = contactBook.contacts[contactIndex!]
         labelName?.stringValue = contactToDelete.name + " " + contactToDelete.lastName
         labelPhone?.stringValue = contactToDelete.phone
         labelEmail?.stringValue = contactToDelete.email
@@ -35,7 +37,7 @@ class RemoveViewController: NSViewController {
         self.view.window?.makeFirstResponder(removeButton)
     }
     @IBAction func removeContact(sender: NSButton) {
-        contactBook.contacts.remove(at: contactToDelete.helperIndex!)
+        contactBook.contacts.remove(at: contactIndex!)
         contactBook.saveCB()
         backView.contactsTable?.reloadData()
         backView.lastRowSelected = -1
@@ -50,7 +52,7 @@ class RemoveViewController: NSViewController {
         backView.contacViewNotes.stringValue = ""
     }
     @IBAction func undoRemoveContact(sender: NSButton) {
-        contactBook.contacts.insert(contactToDelete, at: contactToDelete.helperIndex!)
+        contactBook.contacts.insert(contactToDelete, at: contactIndex!)
         contactBook.saveCB()
         backView.contactsTable?.reloadData()
         removeButton?.isEnabled = false
