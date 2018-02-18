@@ -27,7 +27,7 @@ class AddContactViewController: NSViewController {
         // Do view setup here.
     }
     
-    @IBAction func myfunc(sender: AnyObject) {
+    @IBAction func saveContact(sender: AnyObject) {
         let newContact = Contact(
             name: (nameLabel?.stringValue)!,
             lastname: (lastNameLabel?.stringValue)!,

@@ -14,7 +14,6 @@ class ViewController: NSViewController {
     //Left side elements
     @IBOutlet var addContactButton: NSButton?
     @IBOutlet var contactsTable: NSTableView?
-    @IBOutlet var removeButton: NSButton?
     //Right side elements
     @IBOutlet var contacViewName: NSTextField!
     @IBOutlet var contacViewLastname: NSTextField!
@@ -22,7 +21,8 @@ class ViewController: NSViewController {
     @IBOutlet var contacViewEmail: NSTextField!
     @IBOutlet var contacViewNotes: NSTextField!
     @IBOutlet var contacViewTags: NSTextField!
-//Help variables
+    @IBOutlet var removeButton: NSButton?
+//Help variables:
     let sortings = ["name-sort", "lastname-sort", "phone-sort", "email-sort"]
     var lastSort:String = ""
     var contactBook = ContactBook()
@@ -51,10 +51,10 @@ class ViewController: NSViewController {
             next.contactBook = contactBook
             next.backView = self
             next.contactIndex = (contactsTable?.selectedRow)
-            if next.contactToDelete.helperIndex == nil{
-               next.contactToDelete.helperIndex = (contactsTable?.selectedRow)
+            if contactBook.contactsToShow()[lastRowSelected].helperIndex == nil{
+                next.contactIndex = (contactsTable?.selectedRow)
             }else{
-                next.contactToDelete = contactBook.contactsToShow()[lastRowSelected]
+                next.contactIndex = contactBook.contactsToShow()[lastRowSelected].helperIndex
             }
         }
     }

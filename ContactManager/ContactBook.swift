@@ -77,7 +77,6 @@ class ContactBook: NSObject {
                 }
             }
         }
-        
         return contactsShow
     }
 
@@ -88,7 +87,7 @@ class ContactBook: NSObject {
             for i in 0..<contactsFilteredBySearch.count{
                 if Helper.existsIntersection(ArrayOne: tagsToFilter, ArrayTwo: contactsFilteredBySearch[i].tags) {
                     contactsShowable.append(contactsFilteredBySearch[i])
-                    contactsShowable.last?.helperIndex = i
+                    contactsShowable.last?.helperIndex = contactsFilteredBySearch[i].helperIndex
                 }
             }
             return contactsShowable
